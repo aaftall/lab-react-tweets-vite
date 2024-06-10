@@ -7,15 +7,15 @@ import Actions from "./Actions";
 function Tweet(props) {
   return (
     <div className="tweet">
-      <ProfileImage image={props.image} />
+      <ProfileImage image={props.tweet.user.image} />
 
       <div className="body">
         <div className="top">
-          <User user={props.user} />
-          <Timestamp time={props.timestamp} />
+          <User user={props.tweet.user} />
+          <Timestamp time={props.tweet.timestamp} />
         </div>
-        <Message message={props.message} />
-        <Actions actions={props.actions} />
+        <Message message={props.tweet.message} />
+        <Actions actions={props.tweet.actions} />
       </div>
       <i className="fas fa-ellipsis-h"></i>
     </div>
