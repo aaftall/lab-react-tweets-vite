@@ -40,7 +40,41 @@ const tweetsArray = [
 function App() {
   return (
     <div className="App">
-      <Tweet />
+      <Tweet
+        user={{
+          name: "Thoughts of Dog®",
+          handle: "dog_feelings",
+          image:
+            "https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/tweet-user-photo.png",
+        }}
+        image="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/tweet-user-photo.png"
+        timestamp={"1h ago"}
+        message={
+          "the human likes to say. that i live here rent free. but i would argue. this housing accommodation. is my payment. for a lifetime of love. and excellent company"
+        }
+      />
+      <Tweet
+        user={{
+          name: "Thoughts of Dog®",
+          handle: "dog_feelings",
+        }}
+        image="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/tweet-user-photo.png"
+        timestamp={"2h ago"}
+        message={
+          "sometimes. the human presses their noggin against mine. to figure out what i’m thinking. so i just think really hard. about how much i love them. and hope they figure it out"
+        }
+      />
+      <Tweet
+        user={{
+          name: "Thoughts of Dog®",
+          handle: "dog_feelings",
+        }}
+        image="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/tweet-user-photo.png"
+        timestamp={"3h ago"}
+        message={
+          "here is what. i plan to accomplish today: \n\n2. bark loudly. but at nothing \n7. lose my ball under the couch\n7b. politely ask the human. to get my ball\n3. immediately lose it again. under the same couch\n4. big nap. you have worked hard\n2. repeat"
+        }
+      />
     </div>
   );
 }
